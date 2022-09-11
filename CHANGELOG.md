@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v0.2.5.lite] - 2022-09-11
+### Changed 
+Updated Scrypted to v0.2.5.lite
+
 ## [v0.1.16.lite] - 2022-08-15
 ### Added
 Initial release of HAOS Add-on for Scrypted
