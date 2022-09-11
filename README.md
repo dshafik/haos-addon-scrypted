@@ -9,7 +9,6 @@
 ![Supports amd64 Architecture][amd64-shield]
 
 ![Project Maintenance][maintenance-shield]
-[![GitHub Activity][commits-shield]][commits]
 
 ## About
 
@@ -63,8 +62,6 @@ SOFTWARE.
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
-[commits-shield]: https://img.shields.io/github/commit-activity/dshafik/haos-addon-scrypted.svg
-[commits]: https://github.com/dshafik/haos-addon-scrypted/commits/main
 [contributors]: https://github.com/dshafik/haos-addon-scrypted/graphs/contributors
 [issue]: https://github.com/dshafik/haos-addon-scrypted/issues
 [license-shield]: https://img.shields.io/github/license/dshafik/haos-addon-scrypted.svg
