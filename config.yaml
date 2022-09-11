@@ -1,11 +1,9 @@
 name: "Scrypted"
 description: "Scrypted is a home automation platform powered by node.js."
-version: "v0.1.16.lite"
-url: https://github.com/dshafik/haos-addons-scrypted
+version: "v0.2.5.lite"
+url: https://github.com/dshafik/haos-addons
 slug: "scrypted"
 init: false
-# ingress: true
-# ingress_port: 11080
 panel_icon: mdi:pound
 webui: "http://[HOST]:[PORT:11080]"
 image: "koush/scrypted"
