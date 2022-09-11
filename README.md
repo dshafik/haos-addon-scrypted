@@ -9,7 +9,6 @@
 ![Supports amd64 Architecture][amd64-shield]
 
 ![Project Maintenance][maintenance-shield]
-[![GitHub Activity][commits-shield]][commits]
 
 ## About
 
@@ -63,13 +62,11 @@ SOFTWARE.
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
-[commits-shield]: https://img.shields.io/github/commit-activity/dshafik/haos-addon-scrypted.svg
-[commits]: https://github.com/dshafik/haos-addon-scrypted/commits/main
 [contributors]: https://github.com/dshafik/haos-addon-scrypted/graphs/contributors
 [issue]: https://github.com/dshafik/haos-addon-scrypted/issues
 [license-shield]: https://img.shields.io/github/license/dshafik/haos-addon-scrypted.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2022.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
-[releases-shield]: https://img.shields.io/github/release/dshafik/haos-addon-scrypted.svg
+[releases-shield]: https://img.shields.io/github/v/release/dshafik/haos-addon-scrypted?include_prereleases&label=version
 [releases]: https://github.com/dshafik/haos-addon-scrypted/releases
 [repository]: https://github.com/dshafik/haos-addon-scrypted
