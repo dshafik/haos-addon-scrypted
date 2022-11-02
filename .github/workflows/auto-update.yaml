@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+name: Scrypted Auto-Update
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+jobs:
+  update-scrypted:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: read
+      contents: write
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+        with:
+          ref: main
+    
+      - name: Fetch package versions
+        run: gh api /users/koush/packages/container/scrypted/versions > versions.json
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Find latest version
+        uses: sergeysova/jq-action@v2
+        id: version
+        with:
+          cmd: jq '[.[].metadata.container.tags[]|capture("(?<version>^v.*\\.lite$)")] | .[0].version' versions.json -r
+
+      - name: Update version
+        run: |
+          rm versions.json
+          grep -q '${{ steps.version.outputs.value }}' CHANGELOG.md && exit
+          cat CHANGELOG.md | sed 's/## \[Unreleased]/## [Unreleased]\n\n## [${{ steps.version.outputs.value }}]\n### Changed\nUpdated Scrypted to ${{ steps.version.outputs.value }}/' > CHANGELOG.new
+          mv CHANGELOG.new CHANGELOG.md
+          cat config.yaml | sed 's/version: .*/version: "${{ steps.version.outputs.value }}"/' > config.new
+          mv config.new config.yaml
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update Scrypted to ${{ steps.version.outputs.value }}
+          branch: main
+          file_pattern: 'CHANGELOG.md config.yaml'
+          commit_author: Davey Shafik <davey@php.net>
+          tagging_message: '${{ steps.version.outputs.value }}'
