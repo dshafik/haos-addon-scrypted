@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [v0.3.8.lite]
+### Changed
+Updated Scrypted to v0.3.8.lite
+
 ## [v0.3.7.lite] - 2022-11-02
 ### Changed 
 Updated Scrypted to v0.3.7.lite
