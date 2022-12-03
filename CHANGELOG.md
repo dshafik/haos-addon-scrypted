@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [null]
+### Changed
+Updated Scrypted to null
+
 ## [v0.4.1.lite]
 ### Changed
 Updated Scrypted to v0.4.1.lite

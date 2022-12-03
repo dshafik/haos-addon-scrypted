@@ -1,6 +1,6 @@
 name: "Scrypted"
 description: "Scrypted is a home automation platform powered by node.js."
-version: "v0.4.1.lite"
+version: "null"
 url: https://github.com/dshafik/haos-addons
 slug: "scrypted"
 init: false
