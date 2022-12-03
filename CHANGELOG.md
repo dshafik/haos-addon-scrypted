@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [18-bullseye-lite-v0.7.97]
+### Changed
+Updated Scrypted to 18-bullseye-lite-v0.7.97 
+
 ## [v0.4.1.lite]
 ### Changed
 Updated Scrypted to v0.4.1.lite
